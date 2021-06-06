@@ -33,7 +33,7 @@
 
     npx knex init
 
-    I'll rename config knexfile to database and move it right directory "config"
+    I'll rename config knexfile to database and move it into right directory "config"
 
     const { knexSnakeCaseMappers } = require('objection'); need to change camelCase to snake_case
-    const { fields} = require('./env');
+    const { fields } = require('./env');
