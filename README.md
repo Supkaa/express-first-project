@@ -23,3 +23,17 @@
     "dev": "nodemon index.js",
     "knex": "npx knex --knexfile config/database.js",
     "migrate": "npx knex --knexfile config/database.js migrate:latest"
+
+# initialization env on config
+
+    const dotenv = require('dotenv');
+    dotenv.config({path:'/path/to/.env'});
+
+# initialization knex on config
+
+    npx knex init
+
+    I'll rename config knexfile to database and move it right directory "config"
+
+    const { knexSnakeCaseMappers } = require('objection'); need to change camelCase to snake_case
+    const { fields} = require('./env');
