@@ -1,3 +1,20 @@
+# SHORTS OF STRUCTURE
+
+    |-app/       - main backend directory
+     |--Controller/ - directory where u create Controllers(used to process Request)
+     |--Model/      - directory where u create Models(used to process information of DB table)
+     |--Service     - directory where u create Services(used to process business logic)
+    |-config/    - main config directory
+    |-database/  - main DB directory
+     |--migrations/ - directory where u create migrations
+     |--seeds/      - directory where u create seeds
+    |-resources/ - main frontend directory
+     |--css/   - directory where u create styles
+     |--js/    - directory where u create scripts
+     |--views/ - directory where u create layouts
+    |-routes/    - main routes directory
+    |-.env       - environment file
+
 # install node nginx pgsql
 
     brew install node nginx postgresql
