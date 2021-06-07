@@ -1,5 +1,5 @@
 const dotenv = require('dotenv');
-dotenv.config({path:'../.env'});
+dotenv.config({path:'./.env'});
 module.exports = {
     app_name: process.env.APP_NAME,
     app_env:process.env.APP_ENV,

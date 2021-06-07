@@ -37,3 +37,21 @@
 
     const { knexSnakeCaseMappers } = require('objection'); need to change camelCase to snake_case
     const { fields } = require('/path/to/.env');
+
+# nginx config
+
+    I created nodeJS server on 3000 PORT, because
+
+    server {
+        listen 80;
+        server_name <server_name>;
+
+        location / {
+            proxy_pass http://localhost:3000;
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection 'upgrade';
+            proxy_set_header Host $host;
+            proxy_cache_bypass $http_upgrade;
+        }
+    }
