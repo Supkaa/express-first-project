@@ -1,9 +1,9 @@
-const User = require("../Model/User");
+const UserRepository = require("../Repository/UserRepository");
 
 class UserService {
     async readOneUser(id) {
         try {
-            const user = await User.query().findById(id);
+            const user = await UserRepository.findById(id);
             return {
                 id: user.id,
                 name: user.name
